@@ -11,6 +11,11 @@
     --background_pink: #fdcce9;
 }
 
+.center{
+    text-align: center;
+    font-style: italic;
+}
+
 body{
     background-color: var(--background_pink);
     width: 90%;
@@ -20,11 +25,28 @@ body{
 header{
     margin-top: 2em;
     background-color: var(--secondary_light);
-    padding: .5em;
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding: 1em;
     border-radius: 2em;
     border: 2px solid grey;
+    position: relative;
+}
+
+header img{
+    vertical-align: middle;
+    padding-left: 1em;
+    display: inline;
+    margin-right: 1em;
+}
+
+h1{
+    display: inline;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: navy;
+    text-shadow: 1px 1px 4px rgb(75, 91, 129);
 }
 
 section{
@@ -33,7 +55,7 @@ section{
     font-size: 1.2em;
 }
 
-img{
+figure img{
     width: 100px;
     display: block;
     margin: auto;
@@ -46,8 +68,22 @@ figure{
     text-align: center;
 }
 
-figure p{
+label{
+    display: inline-block;
+    width: 8em;
+    font-weight: bold;
+}
+
+fieldset{
+    border: 1px solid navy;
+}
+
+legend{
+    background-color: var(--secondary_light);
+    padding: .25em;
+    font-weight: bold;
     font-style: italic;
+    border: 1px solid gray;
 }
 
 #nav_menu ul{
@@ -165,14 +201,21 @@ th{
     #nav_menu{
         display: none;
     }
+
     #mobile_menu{
         display: block;
     }
+
     .slicknav_menu{
         background-color: var(--primary_light) !important;
         border: 1px solid navy;
-        margin: auto;
+        margin: auto; 
     }
+
+    .slicknav_menu a{
+        color: black !important;
+    }
+
     #leftSection{
         margin: auto;
         width: 88%;
@@ -181,6 +224,7 @@ th{
         border-radius: 2em;
         margin-top: 1em;       
     }
+
     #rightSection{
         margin: auto;
         width: 88%;
@@ -189,26 +233,25 @@ th{
         border-radius: 2em;
         margin-top: 1em;
     }
+
     header{
         margin: auto;
         margin-bottom: 1em;
         margin-top: 1em;
         width: 88%;
     }
+
     footer{
         margin: auto;
         margin-top: 1em;
         margin-bottom: 1em;
         width: 88%;
     }
+
     h2{
         margin-top: .5em;
     }
-    /*
-    th, td{
-        display: block;
-    }
-    */
+
     table{
         margin-top: 1em;
     }

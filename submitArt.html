@@ -4,6 +4,7 @@
         <title>MS Picasso</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
         <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" integrity="sha512-heyoieAHmpAL3BdaQMsbIOhVvGb4+pl4aGCZqWzX/f1BChRArrBy/XUZDHW9WVi5p6pf92pX4yjkfmdaIYa2QQ==" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/standard.css"/>
@@ -14,6 +15,7 @@
     </head>
     <body>
         <header>
+            <img src="images/MSPicassoLogo50px.png" alt="The MS Picasso Logo, a drawing of a paint pallet">
             <h1>MS Picasso</h1>
         </header>
         <nav id="mobile_menu"></nav>
@@ -27,7 +29,56 @@
             </ul>
         </nav>
         <main>
-            
+            <section id="leftSection">
+                <h2>Please fill out this form to submit your art</h2>
+                <br/>
+                <form action="http://bobtrapp.com/cis/formtest.php" method="GET">
+                    <fieldset>
+                        <legend>Artist Information</legend>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required/>
+                        <br/>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required/>
+                        <br/>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone"/>
+                        <br/>                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required/>
+                        <br/>                        
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <legend>Piece Information</legend>
+                        <label for="pieceName">Piece Name</label>
+                        <input type="text" id="pieceName" name="pieceName" required/>
+                        <br/>
+                        <fieldset>
+                            <legend>Post to...</legend>
+                            <label for="buyPage" id="buyLabel">Buy Page</label>
+                            <input type="radio" id="buyPage" name="buyOrComm" value="buyPage" required/>
+                            <br/>
+                            <label for="communityPage">Community Page</label>
+                            <input type="radio" id="communityPage" name="buyOrComm" value="communityPage" required/>
+                        </fieldset>
+                        <br/>
+                        <label for="price">Price (Only if Buy Page is selected)</label>
+                        <input type="text" id="price" name="price"/>
+                        <br/>
+                        <br/>
+                        <input type="file" id="artPiece" name="artPiece" accept="img/png, img/gif, img/jpeg" required/>
+                        <br/>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="rightSection">
+                <h2>Guidlines for posting:</h2>
+                <h3>Please read before posting</h3>
+                <p>MS Picasso was made for artists of all ages, so we don't allow 18+ content.</p>
+                <p>We also display all images in a maximum 100 pixel by 100 pixel format, so larger images may not appear the same on our website.</p>
+                <p>For art put on the buy page, we take a 5% cut on each sale so that we have the funds to keep this site up and running.</p>
+            </section>
         </main>
         <footer>
             <p>&copy; 2020 Emma Pollock</p>
