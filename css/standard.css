@@ -17,14 +17,15 @@
 }
 
 body{
-    background-color: var(--background_pink);
+    background-color: #fdcce9;
     width: 90%;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
     margin-top: 2em;
-    background-color: var(--secondary_light);
+    background-color: rgb(214, 226, 250);
     padding: 1em;
     border-radius: 2em;
     border: 2px solid grey;
@@ -47,6 +48,7 @@ h1{
     transform: translateY(-50%);
     color: navy;
     text-shadow: 1px 1px 4px rgb(75, 91, 129);
+    font-family: "Lucida Handwriting", cursive;
 }
 
 section{
@@ -79,7 +81,7 @@ fieldset{
 }
 
 legend{
-    background-color: var(--secondary_light);
+    background-color: rgb(214, 226, 250);
     padding: .25em;
     font-weight: bold;
     font-style: italic;
@@ -95,8 +97,8 @@ legend{
 }
 
 #nav_menu ul li{    
-    width: 100%;
-    background-color: var(--primary_light);
+    width: 100%;    
+    background-color: rgb(156, 220, 250);
     text-align: center;
     border: 1px solid navy;
 }
@@ -111,18 +113,33 @@ legend{
 }
 
 #nav_menu ul li:hover{
-    background-color: var(--hover_color);
+    background-color: rgb(118, 209, 252);
 }
 
 #nav_menu #currentPage{
-    background-color: var(--purple_light);
+    background-color: rgb(232, 198, 252);
     font-style: italic;
+}
+
+#onlySection{
+    width:95%;
+    background-color: rgb(156, 220, 250);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    padding: 2%;
+    height: 20em;
+}
+#onlySection p{
+    clear:both;
+    border: 1px solid navy;
+    padding: 1em;
+    background-color: rgb(214, 226, 250);
 }
 
 #leftSection{
     float: left;
     width:60%;
-    background-color: var(--primary_light);
+    background-color: rgb(156, 220, 250);
     padding: 2%;
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
@@ -132,7 +149,7 @@ legend{
 #rightSection{
     float: right;
     width: 25%;
-    background-color: var(--primary_light);
+    background-color: rgb(156, 220, 250);
     margin-bottom: 2em;
     padding: 2%;
     border-top-right-radius: 2em;
@@ -145,13 +162,17 @@ legend{
     direction:ltr;
 }
 
+section a{
+    text-align: center;
+}
+
 #mobile_menu{
     display: none;
 }
 
 footer{
     clear: both;
-    background-color: var(--primary_light);
+    background-color: rgb(156, 220, 250);
     padding: 1em;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -160,12 +181,14 @@ footer{
 }
 
 h2{
+    font-size: 1.25em;
     margin: 0;
-    background-color: var(--secondary_light);
+    background-color: rgb(214, 226, 250);
     padding:.5em;
     border-radius: .5em;
     border: 1px solid grey;
     text-align: center;
+    font-weight: normal;
 }
 
 h3{
@@ -175,12 +198,12 @@ h3{
 hr {
     height:2px;
     border-width:1px;
-    background-color: var(--secondary_light);
+    background-color: rgb(214, 226, 250);
 }
 
 table{
     text-align: center;
-    background-color: var(--primary_light);
+    background-color: rgb(156, 220, 250);
     border: 2px solid navy;
     padding: 1em;
     border-collapse: collapse;
@@ -194,7 +217,12 @@ th, td{
 
 th{
     padding:.3em;
-    background-color: var(--secondary_light);
+    background-color: rgb(214, 226, 250);
+}
+
+#submitDiv{
+    margin-top: .5em;
+    float:right;
 }
 
 @media only screen and (max-width: 824px){
@@ -207,7 +235,7 @@ th{
     }
 
     .slicknav_menu{
-        background-color: var(--primary_light) !important;
+        background-color: rgb(156, 220, 250) !important;
         border: 1px solid navy;
         margin: auto; 
     }
@@ -215,7 +243,10 @@ th{
     .slicknav_menu a{
         color: black !important;
     }
-
+    
+    section{
+        margin-top: 1em;
+    }
     #leftSection{
         margin: auto;
         width: 88%;
